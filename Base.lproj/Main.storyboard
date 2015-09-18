@@ -411,23 +411,24 @@
         <!--Photos-->
         <scene sceneID="QBk-Op-neq">
             <objects>
-                <viewController id="ses-Ae-NU5" sceneMemberID="viewController">
+                <viewController id="ses-Ae-NU5" customClass="PhotoViewController" customModule="Dropbox_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g43-so-hBC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="empty_photos" id="T9O-XM-lez">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="empty_photos" id="udG-Rp-u3r">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Photos" image="photos_tab" id="nAP-tQ-3R7"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0p-Me-DbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2662.5" y="-725.5"/>
+            <point key="canvasLocation" x="2655.5" y="-731.5"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="RV1-kr-Mou">
@@ -763,23 +764,35 @@
         <!--Photos-->
         <scene sceneID="Tqq-qS-yg5">
             <objects>
-                <viewController id="3BS-0n-Jfs" sceneMemberID="viewController">
+                <viewController id="3BS-0n-Jfs" customClass="PhotoViewController" customModule="Dropbox_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hie-pv-beb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="780"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="empty_photos" id="c9h-8f-Pum">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="0nV-wE-Erj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="731"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="existing_photos" id="DAx-Dd-uFp">
+                                        <rect key="frame" x="1" y="-2" width="374" height="733"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Photos" image="photos_tab" id="wjz-27-OuT"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="780"/>
+                    <connections>
+                        <outlet property="photoScrollView" destination="0nV-wE-Erj" id="5N4-UB-oc6"/>
+                        <outlet property="photoUIImageView" destination="DAx-Dd-uFp" id="9Xh-wK-05U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YK8-Uw-64s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3159.5" y="3145.5"/>
+            <point key="canvasLocation" x="3174.5" y="3194"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="WN1-BL-t4Q">
@@ -836,6 +849,7 @@
         <image name="empty_files" width="320" height="454"/>
         <image name="empty_photos" width="320" height="454"/>
         <image name="existing_files" width="320" height="454"/>
+        <image name="existing_photos" width="320" height="725"/>
         <image name="favorites_tab" width="30" height="30"/>
         <image name="files_tab" width="30" height="30"/>
         <image name="logged_out" width="320" height="568"/>
@@ -854,7 +868,7 @@
         <segue reference="D6r-9n-cjW"/>
         <segue reference="7Vz-jM-FyN"/>
         <segue reference="Rbg-TI-I2Z"/>
-        <segue reference="t76-jQ-GNT"/>
         <segue reference="nO8-hm-bH6"/>
+        <segue reference="bfx-N2-dls"/>
     </inferredMetricsTieBreakers>
 </document>
