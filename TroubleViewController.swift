@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.swift
+//  TroubleViewController.swift
 //  Dropbox UI
 //
 //  Created by Claw on 9/18/15.
@@ -8,27 +8,22 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
-    
-
-    @IBOutlet weak var SettingsUIScrollView: UIScrollView!
-
-    @IBOutlet weak var SettingsUIImageView: UIImageView!
-
+class TroubleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-SettingsUIScrollView.contentSize = SettingsUIImageView.image!.size
-        
+
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func onCancelButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
 
     /*
     // MARK: - Navigation
