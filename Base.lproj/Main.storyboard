@@ -16,18 +16,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rym-Fn-FDd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="LB3-Ry-nAd" kind="modal" modalTransitionStyle="flipHorizontal" id="jjB-8X-8JR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DmT-cY-KHJ" userLabel="SignInButton">
                                 <rect key="frame" x="147" y="524" width="83" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="fGH-Mu-XBm" kind="modal" identifier="SignInSegue" modalTransitionStyle="flipHorizontal" id="dg2-h2-xVa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rym-Fn-FDd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="LB3-Ry-nAd" kind="modal" modalTransitionStyle="flipHorizontal" id="jjB-8X-8JR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -411,13 +411,13 @@
         <!--Photos-->
         <scene sceneID="QBk-Op-neq">
             <objects>
-                <viewController id="ses-Ae-NU5" customClass="PhotoViewController" customModule="Dropbox_UI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ses-Ae-NU5" customClass="EmptyPhotoViewController" customModule="Dropbox_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g43-so-hBC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="empty_photos" id="udG-Rp-u3r">
-                                <rect key="frame" x="0.0" y="-1" width="375" height="618"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="empty_photos" id="q9N-d1-Xmn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
@@ -865,10 +865,10 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="D6r-9n-cjW"/>
-        <segue reference="7Vz-jM-FyN"/>
-        <segue reference="Rbg-TI-I2Z"/>
+        <segue reference="dg2-h2-xVa"/>
+        <segue reference="sdI-ic-wiO"/>
+        <segue reference="2Gx-mW-zUr"/>
+        <segue reference="3RK-1O-pY0"/>
         <segue reference="nO8-hm-bH6"/>
-        <segue reference="bfx-N2-dls"/>
     </inferredMetricsTieBreakers>
 </document>
