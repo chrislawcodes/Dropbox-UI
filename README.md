@@ -14,9 +14,12 @@ Completed user stories:
  * [x] Required: User can follow the sign in flow.
  * [x] Required: User can tap the area for "Having trouble signing in?"
  * [x] Required: User can log out from the Settings screen.
+
+Notes:
+Tried playing around with the optional stories but had a hard timing figuring out where to get started
  
- Notes:
- Tried playing around with the optional stories but had a hard timing figuring out where to get started
- 
-  Walkthrough of all User Stories:
-  TBD
+Walkthrough of all User Stories:
+
+![Video Walkthrough](DropboxUI Walkthrough.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
