@@ -20,6 +20,6 @@ Tried playing around with the optional stories but had a hard timing figuring ou
  
 Walkthrough of all User Stories:
 
-![Video Walkthrough](Carousel Walkthrough.gif)
+![Video Walkthrough](DropboxUI Walkthrough.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
